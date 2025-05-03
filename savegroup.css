@@ -1,0 +1,55 @@
+.save-group-container {
+    margin-top: 33px;
+    padding: 22px;
+    border: 1px solid #eceaea;
+    border-radius: 6px;
+    background-color: white;
+    width: 56%;
+  }
+  
+  .save-group-container h3 {
+    margin: 0 0 15px 0;
+    font-size: 18px;
+    font-weight: 550;
+  }
+  
+  .radio-group {
+    margin-bottom: 15px;
+  }
+  
+  .radio-label {
+    margin-right: 20px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .radio-label input[type="radio"] {
+    margin-right: 8px;
+  }
+  
+  .group-select,
+  .group-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .save-button {
+    background-color: #0b0b0b;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .save-button:hover {
+    background-color: #474646;
+  }
+
+  

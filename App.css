@@ -1,0 +1,367 @@
+/* app.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+/* Navbar */
+
+
+/* Container */
+.container {
+  display: flex;
+  margin-top: 60px;
+  position: relative;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 16%;
+  padding: 20px;
+  width: calc(100% - 270px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.main-content-wrapper {
+  width: 100%;
+}
+
+.leads-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.main-content h2 {
+  margin: 20px 0 0 0;
+  font-size: 35px;
+}
+
+.add-lead-btn {
+  padding: 12px 25px;
+  margin: 23px 20px 0px 0px;
+  background-color: #0b0b0b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.add-lead-btn:hover {
+  background-color: #474646;
+}
+
+.add-lead-btn-icon {
+  font-size: 19px;
+  margin-right: 8px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-top: 2%;
+  overflow: visible;
+  position: relative;
+  z-index: 0;
+}
+
+th,
+td {
+  padding: 20px;
+  text-align: left;
+  border: 1px solid rgb(237, 235, 235);
+}
+
+th {
+  background-color: #fdfdfd;
+  color: rgb(0, 0, 0);
+}
+
+input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* Filter Container */
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 70%;
+  margin-top: 20px;
+}
+
+.filter-dropdown {
+  display: block;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;
+  width: 20%;
+}
+
+.search-bar {
+  position: relative;
+  width: 35%;
+  border-radius: 125px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  padding-right: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+/* Actions Cell and Dropdown */
+.actions-cell {
+  position: relative;
+}
+
+.actions-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.action-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-button:hover {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  transform: translateY(-17%);
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Increase z-index to appear above table */
+  min-width: 150px;
+}
+
+.dropdown-menu button {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-menu button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Overlay for add new lead */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+.overlay-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 65%;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+  margin-left: 30px;
+}
+
+.overlay h3 {
+  margin-bottom: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.tab.active {
+  background-color: #0b0b0b;
+  color: white;
+}
+
+/* Import and Manual Entry Sections */
+.import-section,
+.manual-entry-section {
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+.import-section h4 {
+  margin-bottom: 5px;
+  margin-right: 25px;
+}
+
+.preview-table {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.manual-entry-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.manual-entry-row input {
+  flex: 1;
+  padding: 5px;
+}
+
+/* Edit Form */
+.edit-form {
+  padding: 10px;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 650;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.form-actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-actions button:first-child {
+  background-color: #0b0b0b;
+  color: white;
+}
+
+.form-actions button:first-child:hover {
+  background-color: #828282;
+}
+
+.form-actions button:last-child:hover {
+  background-color: #afaeae;
+}
+
+.form-actions button:last-child {
+  background-color: #f0f0f0;
+}
+
+.overlay-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.overlay-actions button,
+.manual-entry-section button {
+  padding: 10px 15px;
+  background-color: #0b0b0b;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.overlay-actions button:hover,
+.manual-entry-section button:hover {
+  background-color: #535151;
+}
+

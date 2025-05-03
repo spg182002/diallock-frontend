@@ -1,0 +1,229 @@
+.manage-title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Campaign Management Styles */
+  .manage-container {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
+    color: #333;
+    width: 70%;
+    max-width: 1400px;
+    margin-right: 0 auto;
+  }
+  
+  /* Campaign Panel */
+  .campaign-panel {
+    margin-top: 15px;
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border:1px solid rgb(213, 207, 207);
+    box-shadow: 0 1px 3px rgba(134, 132, 132, 0.1);
+    /* border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px; */
+  }
+  
+  .campaign-header {
+    margin-bottom: 24px;
+  }
+  
+  .campaign-header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+  }
+  
+  .campaign-header p {
+    font-size: 14px;
+    color: #6c757d;
+    margin: 0;
+  }
+  
+  /* Table Styles */
+  .campaign-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-header {
+    display: flex;
+    border-bottom: 1px solid #e1e4e8;
+    font-weight: 600;
+    font-size: 18px;
+    color: #495057;
+    padding: 12px 0;
+  }
+  
+  .table-row {
+    display: flex;
+    border-bottom: 1px solid #e1e4e8;
+    padding: 16px 0;
+    align-items: center;
+  }
+  
+  .table-row:last-child {
+    border-bottom: none;
+  }
+  
+  .column {
+    padding: 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  /* Fixed column widths for proper alignment */
+  .campaign-name {
+    width: 25%;
+  }
+  
+  .status {
+    width: 12%;
+  }
+  
+  .start-date {
+    width: 15%;
+  }
+  
+  .emails-sent {
+    width: 15%;
+  }
+  
+  .actions {
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  /* Status Badge */
+  .status-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 16px;
+    border: 1px solid rgb(219, 218, 218);
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .status-badge.active {
+    background-color: #e6f7e6;
+    color: #28a745;
+  }
+  
+  .status-badge.paused {
+    background-color: #fff3cd;
+    color: #856404;
+  }
+  
+  .status-badge.stopped {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  /* Action Buttons */
+  .action-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid #e1e4e8;
+    background-color: #fff;
+    transition: background-color 0.2s, border-color 0.2s;
+  }
+  
+  .action-button:hover {
+    background-color: #f6f8fa;
+  }
+  
+  /* .action-button.start,
+  .action-button.resume {
+    color: #28a745;
+  }
+  
+  .action-button.pause {
+    color: #0366d6;
+  }
+  
+  .action-button.stop {
+    color: #6c757d;
+  } */
+  
+  .action-button.more {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border-radius: 4px;
+  }
+  
+  /* Icons */
+  .icon-play:before {
+    content: "▶";
+    font-size: 10px;
+    margin-right: 4px;
+  }
+  
+  .icon-pause:before {
+    content: "⏸";
+    font-size: 10px;
+    margin-right: 4px;
+  }
+  
+  .icon-stop:before {
+    content: "⏹";
+    font-size: 10px;
+    margin-right: 4px;
+  }
+  
+  .icon-more:before {
+    content: "⋯";
+    font-size: 16px;
+  }
+  
+  /* Dropdown Menu */
+  .dropdown-container {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: -10px;
+    width: 180px;
+    background-color: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+  
+.dropdown-item {
+    padding: 10px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+.dropdown-item:hover {
+    background-color: #f6f8fa;
+  }
+  
+.dropdown-item.delete {
+    color: #d73a49;
+  }
+  
+  .manage-container.dropdown-item.delete:hover {
+    background-color: #ffeef0;
+  }
+  
+  
